@@ -8,13 +8,12 @@ Mata Kuliah : Perancangan dan Pemrograman Web.
 
 Keterangan :
 1. image files : Berisi komponen image yang diperlukan dalam membuat tampilan web guild.
-2. Mock-up     : Berisi Desain dari Web Guild.
-3. Html files  : Berisi tulisan html dan kode Javascript.
-4. CSS files   : Berisi Kode CSS3 disertai Method Responsive Web Pages.
+2. Html files  : Berisi tulisan html dan kode Javascript.
+3. CSS files   : Berisi Kode CSS3 disertai Method Responsive Web Pages.
 
 Keterangan Tambahan :
-1. front_pages.html            : merupakan tampilan/halaman awal dari web Courageous Owls Guild.
-2. index.html                  : Merupakan content yang disuguhkan kepada para users.
+1. index.html                  : merupakan tampilan/halaman awal dari web Courageous Owls Guild.
+2. main_content.html           : Merupakan content yang disuguhkan kepada para users.
 3. Login.html                  : Merupakan tampilan halaman Login web. Dikhususkan bagi Guild Member Users.
 4. login_civillian.html        : Merupakan tampilan halaman login web yang dikhususkan bagi Civilian Users.
 5. Connector_SSO_Register.html : Merupakan tampilan halaman web yang berfungsi menjalankan alur SSO pada web Courageous Owls Guild.
@@ -24,7 +23,7 @@ akun :
 id : bagas050201
 password : ilkom2018
 
-Cara Menjalankan : Run front_pages.html
+Cara Menjalankan : Run index.html
 
 notes :
-1. jika di jalankan pada browser chrome maka akan ada renggangan kebawah , ini cukup aneh terlebih pada browse explorer dan mozilla firefox tidak terjadi hal seperti ini.
+1. jika di jalankan pada browser chrome maka pada index.html akan ada renggangan kebawah , ini cukup aneh terlebih pada browser explorer dan mozilla firefox tidak terjadi hal seperti ini.
