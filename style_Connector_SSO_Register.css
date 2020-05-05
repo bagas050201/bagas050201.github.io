@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: "Enriqueta";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0ffff;
+}
+/*untuk tampilan normal (layar laptop/komputer)*/
+/*styling header navbar*/
+header nav {
+    /*background-image: linear-gradient(to right, #43cae9, #38f9d7);*/
+    background-color: #87CEEB;
+  }
+
+  header nav .center-align {
+    margin-left : 570px;
+  }
+  
+header nav ul li a {
+    font-size : 20px;
+  }
+
+/*end*/
+
+/* object yang akan di get oleh javascript yang befungsi membuat navbar tetap keliatan walau web sedang di scroll kebawah*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*end*/
+
+/*styling main*/
+main {
+    padding: 10px;
+    overflow: auto;
+    margin: 100px;
+    margin-top : 5px;
+    
+  }
+  
+  #content {
+    float: left;
+    width: 75%;
+  }
+  
+main article {
+
+    margin-top : 100px;
+    padding: 5px;
+  
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+  }
+  
+ main article h4{
+    text-align: center;
+    background: -webkit-linear-gradient(#43cae9, #38f9d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+main article h3 {
+    padding-top :10px;
+    text-align: center;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#43cae9, #38f9d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+main article img {
+    padding: 8px;
+    border-radius: 20px;
+    width : 50%;
+    margin-left:25%;
+}
+
+main article .general{
+    background-color : #f0ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-left : 150px;
+    margin-right : 150px;
+}
+main article section .row{
+    background-image: linear-gradient(to right, #43cae9, #38f9d7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+/*end*/
+
+/*styling footer*/
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #43cae9, #38f9d7);
+  }
+  
+footer p {
+    color: white;
+    text-align: center;
+  }
+
+  /*end*/
+
+/*responsif web : small screen (untuk layar kecil)*/
+@media screen and (max-width: 641px) {
+
+    main{
+      margin : 5px;
+      padding : 10px;
+      margin-top : 5px;
+    }
+    main article {
+      width: 100%;
+    }
+
+    .general {
+        margin : 10px;
+        width : 50%;
+    }
+
+    .general h3 {
+        font-size : 25px;
+    }
+
+    .general h4 {
+        font-size : 20px;
+    }
+  
+    main article img {
+      width : 100%;
+      margin-left : 13%;
+
+    }
+  }
+  

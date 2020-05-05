@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content=" Muhammad Bagas Pradana" />
+    <meta name="description" content="Login Page for Member Guild"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Membuat Icon Facebook,Twitter, Google +, Github . Karena Materiliaze tidak mendukung Icon tersebut (saya sedih), sehingga saya menggunakan awesome css untuk mengimplementasikan logo mereka-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--membuat icon username dan Password menggunakan Materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="shortcut icon" href="image/favicon4.ico">
+    <title>Login</title>
+  </head>
+  <body>
+      
+      <div class="login-box">
+        <form action="/action_page.php">
+          <h1>Login</h1>
+          <div class="textbox">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" placeholder="Username">
+          </div>
+
+          <div class="textbox">
+            <i class="material-icons prefix">https</i>
+            <input type="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn login">Login Guild Member</button>
+
+        <div class = "thirdparty-line">
+          <span>OR LOG IN WITH</span>
+        </div>
+
+        <div class="col">
+          <a href="https://www.facebook.com" class="fb btn">
+            <!--hapus ini jika tidak ingin ada logo-->
+            <!--Memanggil icons awesome css-->
+            <!--<i class="fab fa-facebook"> ini adalah cara memanggil icons Facebook pada awesome css-->
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnZ8AqYjsljnunZM%3A1588387195&flowName=GlifWebSignIn&flowEntry=AddSession" class="google btn"><i class="fab fa-google">
+            </i> Google+
+          </a>
+          <a href="https://www.twitter.com" class="twitter btn">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a href="https://github.com/bagas050201" class="github btn">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </form>
+
+        <a href = "login_civillian.html" class = "civillian btn">
+          <i class="material-icons prefix">person_add</i>
+          Civillian
+        </a>
+
+      </div>
+  </body>
+</html>

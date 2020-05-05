@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Connector SSO</title>
+        <meta charset="utf-8">
+        <meta name="author" content=" Muhammad Bagas Pradana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Icons Materialize-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <link rel="stylesheet" href="style_Connector_SSO_Register.css">
+        <link rel="shortcut icon" href="image/favicon4.ico">
+        <!--Membuat Icon Facebook,Twitter, Google +, Github . Karena Materiliaze tidak mendukung Icon tersebut (saya sedih), sehingga saya menggunakan awesome css untuk mengimplementasikan logo mereka-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper ">
+                  <ul class="center-align">
+                    <li><a href="index.html">Preview</a></li>
+                    <li><a href="main_content.html">Homepage</a></li>
+                    <li><a href="main_content.html#information">Guild</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        
+        <main>
+            <article>
+                <header class = "general">
+                  <h3>ACCOUNT REGISTRATION</h3>
+                  <h4>COURAGEOUS OWLS</h4>
+                  <figure>
+                    <img src= "image\logo2_crop_transparent.png" alt = "Muhammad Bagas Pradana">
+                  </figure>
+                </header>
+                <section>
+                  <h3  style = "font-size: 25px;">Choose a Platform to Register</h3>
+                  <br>
+                    <div class = "row">
+                        <div class = "col s3"><a href = "register.html" style = "color:white;"><img src = "image/fb.png"></a></div>
+                        <div class = "col s3"><a href = "register.html" style = "color:white;"><img src = "image/twitter.png"></a></div>
+                        <div class = "col s3"><a href = "register.html" style = "color:white;"><img src = "image/google.png"></a></div>
+                        <div class = "col s3"><a href = "register.html" style = "color:white;"><img src = "image/github.png"></a></div>
+                    </div>
+                </section>
+              </article>
+        </main>
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <div class = "col s12"><h5 class="white-text" style = "text-align : center;">Courageous Owls </h5></div>
+                  <div class = "col s6"><span class="flow-text"><img src="image\logo2_crop_transparent.png" alt="" itemprop = "logo" style = "width :100%;float : left;"/></span></div>
+                  <div class = "col s6"><span><p class="grey-text text-lighten-4" style = "text-align : justify;">Courageous owls is a professional guild from the dragon Nest game where this guild has been formed for a long time by star players who have taken part in dragonnest games. "From the stars we came, to the stars we rise."</p></span></div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Temukan kami juga di :</h5>
+                  <ul>
+                    <!--Memanggil icons awesome css-->
+                    <!--<i class="fa fa-instagram" aria-hidden="true"> ini adalah cara memanggil icons Instagram pada awesome css-->
+                    <li><i class="fa fa-instagram" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.instagram.com"> Instagram Offical</a></i></li>
+                    <li><i class="fa fa-facebook" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.facebook.com"> Facebook Official</a></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.twitter.com"> Twitter Offical</a></i></li>
+                    <li><i class="fa fa-google" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnZ8AqYjsljnunZM%3A1588387195&flowName=GlifWebSignIn&flowEntry=AddSession"> Google+</a></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://github.com/bagas050201"> Github Account</a></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+                  <p>Copyright © 2020 Muhammad Bagas Pradana. All rights reserved</p>
+              </div>
+            </div>
+          </footer>
+
+    <script>
+      //sticky navbar
+      let navbar = document.getElementsByTagName("nav")[0];
+      let offsetTopNavbar = navbar.offsetTop;
+
+      window.onscroll = function(){
+        if(this.pageYOffset >= offsetTopNavbar){
+          navbar.classList.add("sticky");
+        }
+        else{
+          navbar.classList.remove("sticky");
+        }
+      }
+      //sticky navbar selesai
+    </script>
+    </body>
+</html>

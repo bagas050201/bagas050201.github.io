@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /*styling background image*/
+  .bg-img {
+  
+    background-image: url("image/DN3.jpg");
+    width : 100%;
+    min-height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  /*end*/
+  
+  /*styling kotak form*/
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    max-height: 100%;
+    padding: 16px;
+    background-color: #F5FFFA;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+  }
+  
+  .container h2{
+    text-align : center;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #708090;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color:#AFEEEE;
+    outline: none;
+  }
+  
+  /*end*/
+
+  /*styling button*/
+  .btn {
+    background-color: #26a69a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-top : 15px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+  button:hover {background-color:  #AFEEEE}
+  button:active {
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+  }
+  /*end*/

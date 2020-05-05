@@ -1,0 +1,27 @@
+Nama        : Muhammad Bagas Pradana.
+NIM         : 1313618015.
+Prodi       : Ilmu Komputer 2018.
+Mata Kuliah : Perancangan dan Pemrograman Web.
+
+				
+				Penjelasan Singkat
+
+Keterangan :
+1. image files : Berisi komponen image yang diperlukan dalam membuat tampilan web guild.
+2. Mock-up     : Berisi Desain dari Web Guild.
+3. Html files  : Berisi tulisan html dan kode Javascript.
+4. CSS files   : Berisi Kode CSS3 disertai Method Responsive Web Pages.
+
+Keterangan Tambahan :
+1. front_pages.html            : merupakan tampilan/halaman awal dari web Courageous Owls Guild.
+2. index.html                  : Merupakan content yang disuguhkan kepada para users.
+3. Login.html                  : Merupakan tampilan halaman Login web. Dikhususkan bagi Guild Member Users.
+4. login_civillian.html        : Merupakan tampilan halaman login web yang dikhususkan bagi Civilian Users.
+5. Connector_SSO_Register.html : Merupakan tampilan halaman web yang berfungsi menjalankan alur SSO pada web Courageous Owls Guild.
+6. register.html               : Merupakan tampilan halaman web yang menjalankan kerangka Registrasi akun.
+
+akun :
+id : bagas050201
+password : ilkom2018
+
+Cara Menjalankan : Run front_pages.html di Browser Chrome
