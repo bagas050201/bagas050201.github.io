@@ -24,4 +24,7 @@ akun :
 id : bagas050201
 password : ilkom2018
 
-Cara Menjalankan : Run front_pages.html di Browser Chrome
+Cara Menjalankan : Run front_pages.html
+
+notes :
+1. jika di jalankan pada browser chrome maka akan ada renggangan kebawah , ini cukup aneh terlebih pada browse explorer dan mozilla firefox tidak terjadi hal seperti ini.
