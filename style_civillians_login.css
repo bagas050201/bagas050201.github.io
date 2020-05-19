@@ -74,4 +74,11 @@ body, html {
     box-shadow: 0 5px grey;
     transform: translateY(4px);
   }
-  /*end*/
+  
+ @media screen and (max-width: 641px) {
+
+    .container{
+      margin-right : 100px;
+      margin-top: 150px;
+    }
+ }
