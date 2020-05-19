@@ -156,4 +156,156 @@ button:active {
   box-shadow: 0 5px grey;
   transform: translateY(4px);
 }
+
+/*responsive*/
+@media screen and (max-width: 641px) {
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(image/a.jpg) no-repeat;
+    background-size: 600px 1000px;
+  }
+
+  
+  .login-box{
+    width : 290px;
+    position: absolute;
+    margin-top:-10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+  }
+
+  .login-box h1{
+    float: left;
+    font-size: 30px;
+    border-bottom: 4px solid  #43cae9;
+    margin-bottom: 10px;
+    margin-top : -40px;
+    padding: 17px 0;
+  }
+  .textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid  #43cae9;
+  }
+  .textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+  }
+  
+  .btn {
+    background-color:  #43cae9;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 12px;
+    text-decoration: none; /* remove underline from anchors */}
+  button:hover {background-color:  #43cae9}
+  
+  .login{
+    width : 100%;
+  }
+
+  /*styling tulisan dibawah button*/
+.thirdparty-line {
+  text-align: center;
+  font-size: 15px;
+  margin-top:10px;
+  color : white;
+}
+/*end*/
+
+/*styling box fb,twitter,google+,github, civilian*/
+.col{
+  margin-top:13px;
+  text-align: center;
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+/*end*/
+
+/*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+.fb:hover {background-color:  #3B5998}
+.fb:active {
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/*end*/
+.google {
+  background-color: #dd4b39;
+  color: white;
+  
+}
+/*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+.google:hover {background-color:  #dd4b39}
+.google:active {
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/*end*/
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+/*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+.twitter:hover {background-color:  #55ACEE}
+.twitter:active {
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/*end*/
+
+.github {
+  background-color: #495057;
+  color: white;
+}
+
+/*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+.github:hover {background-color:  #495057}
+.github:active {
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+/*end*/
+
+.civillian {
+  background-color: #228B22;
+  color: white;
+  padding : 8px;
+
+/*teknik button agar jika di klik menimbulkan effect tombol tertekan*/
+.civillian:hover {background-color:  #228B22}
+.civillian:active {
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+
+}
+}
 /*end*/
