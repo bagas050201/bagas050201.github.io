@@ -38,7 +38,7 @@
             
             <div class="input-field col s6">
               <i class="material-icons prefix">assignment_ind</i>
-              <input   value="bagas050201" type="text" class="validate">
+              <input   id = "userName" type="text" class="validate" required="required"  onclick="username()">
               <label for="first_name">Username</label>
             </div>
             <div class="input-field col s6">
@@ -175,10 +175,15 @@
       console.log("Image URL: " + profile.getImageUrl());
       console.log("Email: " + profile.getEmail());
       
-
+    
       // The ID token you need to pass to your backend:
       var id_token = googleUser.getAuthResponse().id_token;
       console.log("ID Token: " + id_token);
+    }
+    
+    function username(googleUser){
+      var profile = googleUser.getBasicProfile();
+      document.getElementById("userName").innerHTML = profile.getName();
     }
   </script>
 
