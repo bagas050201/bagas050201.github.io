@@ -38,7 +38,7 @@
             
             <div class="input-field col s6">
               <i class="material-icons prefix">assignment_ind</i>
-              <input   id = "userName" type="text" class="validate" required="required"  onclick="username()">
+              <input   id = "username" type="text" class="validate" required="required"  onclick="username()">
               <label for="first_name">Username</label>
             </div>
             <div class="input-field col s6">
@@ -184,7 +184,7 @@
     function username(googleUser){
       var profile = googleUser.getBasicProfile();
       var name = profile.getName());
-      document.getElementById("userName").value = name;
+      document.getElementById("username").value = name;
     }
   </script>
 
