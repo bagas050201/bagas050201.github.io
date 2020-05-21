@@ -51,6 +51,7 @@
                         <div class = "col s4"><a href = "register.html" style = "color:white;"><img src = "image/fb.png"></a></div>
                         <div class = "col s4">
                           <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"><a href = "register.html" style = "color:white;"><img src = "image/google.png"></a></div>
+                          <a href="#" onclick="signOut();">Sign out</a>
                         </div>
                         <div class = "col s4"><a href = "register.html" style = "color:white;"><img src = "image/linkedin.png"></a></div>
                         <div class = "col s4 push-s2"><a href = "register.html" style = "color:white;"><img src = "image/github.png"></a></div>
@@ -121,5 +122,15 @@
         console.log("ID Token: " + id_token);
       }
     </script>
+        
+    <script>
+      function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+      console.log('User signed out.');
+      });
+    }
+    </script>
+        
     </body>
 </html>
