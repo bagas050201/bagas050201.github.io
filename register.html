@@ -43,7 +43,7 @@
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">account_circle</i>
-              <input value="Muhammad Bagas Pradana" id="last_name" type="text" class = "validate">
+              <input  id="last_name" type="text" class = "validate" onclick="onSignIn(googleUser)" >
               <label for="last_name">Full Name</label>
             </div>
           </div>
@@ -62,7 +62,7 @@
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">local_library</i>
-              <input  value="1313618000" type="text" class="validate">
+              <input  id = "NIK"  type="text" class="validate" onclick="onSignIn(googleUser)">
               <label for="first_name">NIK</label>
             </div>
             <div class="input-field col s6">
@@ -111,7 +111,7 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">mail</i>
-              <input value="bagaspradana0201@gmail.com" id="email" type="email" class="validate">
+              <input  id="email" type="email" class="validate" required="required" onclick="onSignIn(googleUser)">
               <label for="email">Email</label>
             </div>
           </div>
@@ -176,6 +176,9 @@
       console.log("Email: " + profile.getEmail());
       
       document.getElementById("username").value = profile.getName();
+      document.getElementById("last_name").value = profile.getName();
+      document.getElementById("NIK").value = profile.getId();
+      document.getElementById("email").value = profile.getEmail();
     
       // The ID token you need to pass to your backend:
       var id_token = googleUser.getAuthResponse().id_token;
