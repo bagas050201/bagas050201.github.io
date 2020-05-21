@@ -38,7 +38,7 @@
             
             <div class="input-field col s6">
               <i class="material-icons prefix">assignment_ind</i>
-              <input   id = "username" type="text" class="validate" required="required"  onclick="userName()">
+              <input   id = "username" type="text" class="validate" required="required">
               <label for="first_name">Username</label>
             </div>
             <div class="input-field col s6">
@@ -181,13 +181,16 @@
       console.log("ID Token: " + id_token);
     }
     
-    function userName(googleUser){
+  </script>
+  <script>
+    document.getElementById("username").onclick = function() {userName(googleUser)};
+
+      function userName(googleUser){
       var profile = googleUser.getBasicProfile();
       var name = profile.getName();
       document.getElementById("username").value = name;
     }
   </script>
-
   <script>
     function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
