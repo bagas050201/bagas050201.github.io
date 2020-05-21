@@ -117,10 +117,10 @@
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
         
-        document.cookie = "name" = profile.getId();
-        document.cookie = "givenName" = profile.getGivenName();
-        document.cookie = "familyName" = profile.getFamilyName();
-        document.cookie = "email" = profile.getEmail();
+        document.cookie = "name = profile.getId();expires=Thu, 18 Jun 2020 12:00:00 UTC; path=/"; 
+        document.cookie = "givenName = profile.getGivenName();expires=Thu, 18 Jun 2020 12:00:00 UTC; path=/"; 
+        document.cookie = "familyName = profile.getFamilyName();expires=Thu, 18 Jun 2020 12:00:00 UTC; path=/"; 
+        document.cookie = "email = profile.getEmail();expires=Thu, 18 Jun 2020 12:00:00 UTC; path=/"; 
           
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
