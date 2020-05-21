@@ -183,7 +183,8 @@
     
     function username(googleUser){
       var profile = googleUser.getBasicProfile();
-      console.log('Full Name: ' + profile.getName());
+      var name = profile.getName());
+      document.getElementById("userName").innerHTML = name;
     }
   </script>
 
