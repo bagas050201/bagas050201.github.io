@@ -18,10 +18,10 @@ Keterangan Tambahan :
 4. login_civillian.html        : Merupakan tampilan halaman login web yang dikhususkan bagi Civilian Users.
 5. Connector_SSO_Register.html : Merupakan tampilan halaman web yang berfungsi menjalankan alur SSO pada web Courageous Owls Guild.
 6. register.html               : Merupakan tampilan halaman web yang menjalankan kerangka Registrasi akun.
+7. Membership                  : Merupakan tampilan halaman web yang berfungsi menampilkan data informasi mengenai para members dari guild Courageous Owls.
+8. Admin                       : Merupakan tampilan halaman web yang berfungsi menampilkan data informasi mengenai data Administrator Website ini.
+9. Dev_info                    : Merupakan tampilan halaman web yang menjelaskan keluh kesah dalam membuat website ini.
 
-akun :
-id : bagas050201
-password : ilkom2018
 
 Cara Menjalankan : Run index.html
 
