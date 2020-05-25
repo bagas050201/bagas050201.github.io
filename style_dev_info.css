@@ -132,7 +132,7 @@ footer p {
 /*responsif web : small screen (untuk layar kecil)*/
 @media screen and (max-width: 641px) {
 
-   header .nav-wrapper{
+  header .nav-wrapper{
     margin-left:-522px;
   }
   main{
