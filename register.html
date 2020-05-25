@@ -13,10 +13,13 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style_register.css">
-    
+    <!--international phone number-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/css/intlTelInput.css">
+
+    <!--Google SSO-->
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="30648682099-ofja6b7nsb37ulv500lm2pb3ccvejkok.apps.googleusercontent.com">
-    
+
     <link rel="shortcut icon" href="image/favicon4.ico">
   </head>
   <body>
@@ -25,17 +28,15 @@
     </header>
     <div class="container pt-60">
       <div class="row">
-        <form class="col s12" action="/action_page.php">
+        <form class="col s12" action="Login.html">
           <div class="row">
             <div class = "col s12" >
               <h6>Users can Register Using Data from Google Accounts</h6>
             </div>
-            
-            <div class = "col s12" >
-              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" ></div>
-              <a href="#" onclick="signOut();" >Sign out</a>
+            <div class = "col s12">
+              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+              <a href="#" onclick="signOut();">Sign out</a>
             </div>
-            
             <div class="input-field col s6">
               <i class="material-icons prefix">assignment_ind</i>
               <input   id = "username" type="text" class="validate" required="required" onclick="onSignIn(googleUser)">
@@ -50,15 +51,36 @@
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">https</i>
-              <input value = "ilkom2018" id="pass" type="password" class="validate">
-              <label for="pass">Password Account SSO </label>
+              <input id="pass" type="password" class="validate" required="required" >
+              <label for="pass">Password</label>
             </div>  
             <div class="input-field col s6">
               <i class="material-icons prefix">fingerprint</i>
-              <input  value = "ilkom2018" id="c_pass" type="password" class="validate">
-              <label for="c_pass">Confirm Password</label>
+              <input  id="c_pass" type="password" class="validate" required="required" onchange="check()">
+              <label for="c_pass" >Confirm Password</label>
+              <span id="pesan"></span>
+
             </div>
           </div>
+          <div id="message">
+            <h5>Password must contain the following:</h5>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          </div>
+          
+
+          <div class="row">
+            <div class="col s12 mt-25"> 
+              <button class="btn waves-effect waves-light " type = "button" onclick = "gfg_Run()">Auto Generated Strong Password
+                <i class="material-icons prefix right">fingerprint</i>
+                <i class="material-icons prefix left">fingerprint</i>
+              </button>
+            </div>
+          </div>
+          <p style = "text-align: center;">Anda Bisa Mengcopy Text Dibawah Ini :</p>
+          <p id = "generate"style = "text-align: center;"></p> 
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">local_library</i>
@@ -87,14 +109,14 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">work</i>
-              <input  value="Mahasiswa" type="text" class="validate">
+              <input  value="Mahasiswa" type="text" class="validate" required="required" > 
               <label for="first_name">Profession</label>
             </div>
           </div>
           <div class="row mb-0">
             <div class="input-field col s12">
               <i class="material-icons prefix">school</i>
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <textarea id="textarea1" class="materialize-textarea" required="required"></textarea>
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <textarea id="textarea1" class="materialize-textarea"></textarea>
@@ -104,7 +126,7 @@
           <div class="row mb-0">
             <div class="input-field col s12">
               <i class="material-icons prefix">location_on</i>
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <textarea id="textarea1" class="materialize-textarea" required="required"></textarea>
               <label for="textarea1">Address</label>
             </div>
           </div>
@@ -122,9 +144,36 @@
               <label for="datepicker">Birth Date</label>
             </div>
           </div>
+    
+          <div class = "row">
+            <div class="input-field col s12">
+                <label>Nomor Handphone</label>
+                <br/>
+                <input type = "tel" id = "phone" name = "phone" required="required" onclick ="return mobileNumber();">
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class="input-field col s12">
+                <label>Nomor Telephone</label>
+                <br/>
+                <input type = "tel" id = "telephone" name = "phone" required="required" onclick ="return phoneNumber();">
+            </div>
+          </div>
+
+          <div class="file-field input-field">
+            <i class="material-icons prefix right">attachment</i>
+            <div class="btn">
+              <span>Upload your KTP File</span>
+              <input required="required" type="file" multiple >
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload one or more files">
+            </div>
+          </div>
 
           <label>
-          <input type="checkbox" />
+          <input type="checkbox" required="required" />
           <span>Remember Me</span>
           </label>
           <div class="row">
@@ -137,32 +186,16 @@
         </form>
       </div>
     </div>
+    <!--Script tugas Assignment 2 phase 2-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Compiled and minified jquery -->
     <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
     
-    <script>
-      //calendar picker
-      const Calender = document.querySelector('.datepicker');
-      M.Datepicker.init(Calender,{
-        format : 'dd-mmmm-yyyy',
-        showClearBtn:true,
-        i18n:{
-          clear:'remove',
-          done:'yes',
-          cancel:'no'
-        }
-      })
-    </script>
-
-    <script>
-      //select box
-      $(document).ready(function() {
-         $('select').material_select();
-      });
-   </script>
-    
-    
+    <!--Script tugas Assignment 2 Phase 3-->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type = "text/javascript" src = "JS_register.js"></script>
+  <!--End-->
   </body>
 </html>
