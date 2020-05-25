@@ -73,3 +73,36 @@
     border-right-color: #2c3e50;
     border-bottom-color: #6A79A6;
     }
+
+    /* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+  #message {
+      text-align: center;
+  }
+
+  .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/img/flags.png");}
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/img/flags@2x.png");}
+  }
+
