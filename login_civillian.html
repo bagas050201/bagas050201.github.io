@@ -19,21 +19,21 @@
 <body>
 
 <div class="bg-img">
-  <form action="/action_page.php" class = "container">
+  <form action="index.html" class = "container">
     <h2>Login</h2>
     <div class="textbox">
       <i class="material-icons prefix">account_circle</i>
-      <input type="text" placeholder="Username">
+      <input type="text" placeholder="Username" required  id = "text"  onclick ="return userName();">
     </div>
 
     <div class="textbox">
       <i class="material-icons prefix">https</i>
-      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Password" required  id = "pass"  onclick ="return password();">
     </div>
     <button type="submit" class="btn login">Login as Civilian</button>
 
   </form>
-
+  <script type="text/javascript" src="JS_login_civillian.js"></script>
 </body>
 
 </html>
