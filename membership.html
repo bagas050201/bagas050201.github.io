@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content=" Muhammad Bagas Pradana" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon4.ico">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!--Membuat Icons Facebook,Twitter, Google +, Github . Karena Materiliaze tidak mendukung Icon tersebut (saya sedih), sehingga saya menggunakan awesome css untuk mengimplementasikan logo mereka-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style_membership.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">Members </a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons red">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Preview</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Connector_SSO_Register.html">Register</a></li>
+                    <li><a href="dev_info.html">dev_info</a></li>
+                  </ul>
+                </div>
+            </nav>
+              
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Preview</a></li>
+                  <li><a href="admin.html">Admin</a></li>
+                  <li><a href="Login.html">Login</a></li>
+                  <li><a href="Connector_SSO_Register.html">Register</a></li>
+                  <li><a href="dev_info.html">dev_info</a></li>
+              </ul>
+            
+              <div class="row">
+                <br>
+                <br>
+                <br>
+                
+                <div class="grid-example col s12   " style = "color: white;font-family:'Karla';"><h2>WELCOME!</h2></div>
+                <div class="grid-example col s12 m6 l4 left"><span class="flow-text" style = "color: white;">This page contains all information about theCourageus owls guild members. You can also check the rank upgrade.</span></div>
+                <div class="grid-example col s12 " ><button style = "color: #DC143C;font-family:'Karla';font-size: 25px;">GET STARTED</button></div>
+              </div>
+          </header>
+
+          <main>
+            <article>
+              <div class="row">
+                <div class="col s12 center">
+                  <h1 style = "color: #00008B;">List of Members</h1>
+                </div>
+                <div class = "col s12 center">
+                  <h4>Following is a general collection of information from all members of the courageous owls guild. These people, are the people who have the Perseverance to advance this guild to be even better</h4>
+                </div>
+              </div>
+
+              <br>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for nickname.." title="Type in a name">
+              <br>
+              <br>
+              <table id="myTable">
+                <tr class="header">
+                  <th style="width:25%;">Nickname</th>
+                  <th style="width:25%;">Ranks</th>
+                  <th style="width:25%;">Gender</th>
+                  <th style="width:25%;">Level</th>
+                  
+                </tr>
+                <tr>
+                  <td>BriskyGamer</td>
+                  <td>Knight</td>
+                  <td>Female</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>Ballistic missile</td>
+                  <td>Soldier</td>
+                  <td>Male</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>Dragoon</td>
+                  <td>Guardian</td>
+                  <td>Male</td>
+                  <td>49</td>
+                </tr>
+                <tr>
+                  <td>duelist</td>
+                  <td>Guardian</td>
+                  <td>Female</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>Daemonocracy</td>
+                  <td>Captain</td>
+                  <td>Male</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>Easy Sweeper</td>
+                  <td>Soldier</td>
+                  <td>Female</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>Draper</td>
+                  <td>Guardian</td>
+                  <td>Male</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Error404</td>
+                  <td>General</td>
+                  <td>Male</td>
+                  <td>93</td>
+                </tr>
+                <tr>
+                  <td>FallenAngelr</td>
+                  <td>Captain</td>
+                  <td>Female</td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <td>Brick</td>
+                  <td>General</td>
+                  <td>Male</td>
+                  <td>92</td>
+                </tr>
+                <tr>
+                  <td>Violent</td>
+                  <td>Captain</td>
+                  <td>Male</td>
+                  <td>82</td>
+                </tr>
+                <tr>
+                  <td>FearlessScorpio</td>
+                  <td>Guardian</td>
+                  <td>Male</td>
+                  <td>47</td>
+                </tr>
+                <tr>
+                  <td>Gameplanner</td>
+                  <td>Gladiator</td>
+                  <td>Male</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>Gunhawk</td>
+                  <td>Gladiator</td>
+                  <td>Male</td>
+                  <td>55</td>
+                </tr>
+
+                <tr>
+                  <td>Halo Man</td>
+                  <td>Gladiator</td>
+                  <td>Male</td>
+                  <td>69</td>
+                </tr>
+                <tr>
+                  <td>Fanatic</td>
+                  <td>Hero</td>
+                  <td>Male</td>
+                  <td>87</td>
+                </tr>
+                <tr>
+                  <td>S1mple</td>
+                  <td>Hero</td>
+                  <td>Male</td>
+                  <td>87</td>
+                </tr>
+                <tr>
+                  <td>Shroud</td>
+                  <td>General</td>
+                  <td>Male</td>
+                  <td>93</td>
+                </tr>
+
+                <tr>
+                  <td>Slayers</td>
+                  <td>Gladiator</td>
+                  <td>Male</td>
+                  <td>65</td>
+                </tr>
+
+                <tr>
+                  <td>Hunters</td>
+                  <td>Hero</td>
+                  <td>Male</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>Dracula</td>
+                  <td>Hero</td>
+                  <td>Male</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>Gilgamesh</td>
+                  <td>General</td>
+                  <td>Male</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>Jungkook</td>
+                  <td>Hero</td>
+                  <td>Male</td>
+                  <td>90</td>
+                </tr>
+
+                <tr>
+                  <td>Carlos</td>
+                  <td>General</td>
+                  <td>Male</td>
+                  <td>95</td>
+                </tr>
+              </table>
+            </article>
+
+            <article>
+              <div class="row">
+                <div class="col s12 center">
+                  <br>
+                  <br>
+                  <h1 style = "color: #00008B;">check your exp in game to upgrade your rank !</h1>
+                </div>
+                <div class = "col s12 center">
+                  <h4>you only need to enter your total exp value in the dragonnest game (rounded down  in thousands ). then the system will check it</h4>
+                  <h6>| 5000  | 15000 | 25000 | 32000 | 37000 | 45000 | 60000 |</h6>
+                </div>
+              </div>
+
+              <input id="numb">
+
+              <button type="button" id="btn">Click Me!</button>
+
+              <p id="demo"></p>
+
+              <div id="formArea" class="hidden ">
+                <form class="col s12" action="/action_page.php">
+                  <div class="row">
+                    
+                    
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">assignment_ind</i>
+                      <input   id = "username" type="text" class="validate" required="required" >
+                      <label for="first_name">Username</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input  id="last_name" type="text" class = "validate">
+                      <label for="last_name">Nickname</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">https</i>
+                      <input id="pass" type="password" class="validate" required="required" >
+                      <label for="pass">Password</label>
+                    </div>  
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">fingerprint</i>
+                      <input  id="c_pass" type="password" class="validate" required="required" onchange="check()">
+                      <label for="c_pass" >Confirm Password</label>
+                      <span id="pesan"></span>
+        
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">functions</i>
+                      <input  id = "NIK"  type="text" class="validate" >
+                      <label for="first_name">Total Exp in Game </label>
+                    </div>
+                    <div class="input-field col s6">
+                      <select class = "browser-default">
+                       <option value = "" disabled selected>Your Level Now</option>
+                       <option value = "1">15</option>
+                       <option value = "2">30</option>
+                       <option value = "3">50</option>
+                       <option value = "4">70</option>
+                       <option value = "5">85</option>
+                       <option value = "6">90</option>
+                    </select>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="row mb-0">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">location_on</i>
+                      <textarea id="textarea1" class="materialize-textarea" required="required"></textarea>
+                      <label for="textarea1">Address</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mail</i>
+                      <input  id="email" type="email" class="validate" required="required" >
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">date_range</i>
+                      <input value="05-February-2001" type="text" class="datepicker">
+                      <label for="datepicker">Birth Date</label>
+                    </div>
+                  </div>
+            
+                  
+        
+                  <div class="file-field input-field">
+                    
+                    <div class="btn">
+                      <span>Upload your KTP File</span>
+                      <input required="required" type="file" multiple >
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                    </div>
+                  </div>
+        
+                  <label>
+                  <input type="checkbox" required="required" />
+                  <span>Remember Me</span>
+                  </label>
+                  <div class="row">
+                    <div class="col s12"> 
+                      <button class="btn waves-effect waves-light pulse" id = "click" type="button" >Upgrade!
+                      <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </article>
+          </main>
+
+          <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <div class = "col s12"><h5 class="white-text" style = "text-align : center;">Courageous Owls </h5></div>
+                  <div class = "col s6"><span class="flow-text"><img src="image\logo2_crop_transparent.png" alt="" itemprop = "logo" style = "width :100%;float : left;"/></span></div>
+                  <div class = "col s6"><span><p class="grey-text text-lighten-4" style = "text-align : justify;">Courageous owls is a professional guild from the dragon Nest game where this guild has been formed for a long time by star players who have taken part in dragonnest games. "From the stars we came, to the stars we rise."</p></span></div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Temukan kami juga di :</h5>
+                  <ul>
+                    <!--Memanggil icons awesome css-->
+                    <!--<i class="fa fa-instagram" aria-hidden="true"> ini adalah cara memanggil icons Instagram awesome css-->
+                    <li><i class="fa fa-instagram" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.instagram.com"> Instagram Offical</a></i></li>
+                    <li><i class="fa fa-facebook" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.facebook.com"> Facebook Official</a></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.twitter.com"> Twitter Offical</a></i></li>
+                    <li><i class="fa fa-google" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnZ8AqYjsljnunZM%3A1588387195&flowName=GlifWebSignIn&flowEntry=AddSession"> Google+</a></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://github.com/bagas050201"> Github Account</a></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+                  <p>Copyright © 2020 Muhammad Bagas Pradana. All rights reserved</p>
+              </div>
+            </div>
+          </footer>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script src = "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput.js"></script>
+          <script type = "text/javascript" src = "JS_membership.js"></script>
+    </body>
+
+</html>
+    

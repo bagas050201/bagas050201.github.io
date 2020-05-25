@@ -1,0 +1,129 @@
+body{
+    font-family:'Varela Round';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+background-image: url(image/background9.png);
+height : 106vh;
+-webkit-background-size : cover;
+background-size : cover;
+background-position: center center;
+position : relative;
+} 
+
+header .row{
+  font-family:'Varela';
+  margin-left : 6%;
+  font-size: 30px;
+  margin-top : 70px;
+}
+
+header .row button{
+  margin-top : 25px;
+  color : white;
+  background:white;
+  width : 200px;
+  padding-bottom : 6px;
+  border-radius: 25px;
+}
+nav{
+background : rgba(255,255,255,0);
+border-color : rgba(255,255,255,0);
+}
+.parallax-container{
+height : 150px;
+}
+
+nav .nav-wrapper .brand-logo{
+  margin-left : 40px;
+}
+
+nav .nav-wrapper ul li a{
+  margin-right : 40px;
+  color : #DC143C;
+}
+
+header .row{
+  color: white;
+  size:100px;
+}
+
+header .nav-wrapper .brand-logo{
+  left : 190px;
+  color : white;
+}
+
+main{
+  background-image: url(image/background5.jpg);
+  -webkit-background-size : cover;
+  background-size : cover;
+  position : relative;
+  margin-top : -43px;
+
+
+  }
+
+main article{
+  margin-left : 10%;
+  margin-right : 10%;
+  
+}
+
+/**rank checked**/
+#formArea{
+  border:2px double #87CEFA;
+  width:75%;
+  box-shadow:2px 2px 0 #303030;
+  height:800px;
+  padding:5px;
+  padding-right : 20px;
+  padding-left : 20px;
+  margin-left : 10%;
+  margin-top: 20px;
+}
+main article #btn{
+  background-color :#87CEFA ;
+  border-radius: 15px;
+  height:40px;
+  width : 150px;
+  margin-bottom : 15px;
+  margin-left : 43%;
+}
+
+.hidden { 
+  display:none; 
+}
+
+/**end**/
+.page-footer{
+  padding: 20px;
+  background-color :#f94b4a;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+/*end*/
+
+@media screen and (max-width: 641px) {
+  header .nav-wrapper .brand-logo{
+    left : 210px;
+    color : #f94b4a;
+  }
+
+  main article #btn{
+    background-color :#87CEFA ;
+    border-radius: 15px;
+    height:40px;
+    width : 150px;
+    margin-bottom : 10px;
+    margin-left : 29%;
+  }
+
+
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content=" Muhammad Bagas Pradana" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon4.ico">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!--Membuat Icons Facebook,Twitter, Google +, Github . Karena Materiliaze tidak mendukung Icon tersebut (saya sedih), sehingga saya menggunakan awesome css untuk mengimplementasikan logo mereka-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style_admin.css">
+        
+    </head>
+    <body>
+      <header>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Admin Pages</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Preview</a></li>
+                <li><a href="membership.html">Members</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Connector_SSO_Register.html">Register</a></li>
+                <li><a href="dev_info.html">dev_info</a></li>
+              </ul>
+            </div>
+        </nav>
+          
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Preview</a></li>
+              <li><a href="membership.html">Members</a></li>
+              <li><a href="Login.html">Login</a></li>
+              <li><a href="Connector_SSO_Register.html">Register</a></li>
+              <li><a href="dev_info.html">dev_info</a></li>
+          </ul>
+        
+          <div class="row">
+            <br>
+            <br>
+            <br>
+            
+            <div class="grid-example col s12 " style = "color: #00008B;"><h2>Welcome!</h2></div>
+            <div class="grid-example col s12 m6 l4 left"><span class="flow-text" style = "color: #00BFFF;">To the admin page, this page serves as a forum for more information about the administration of the courageous owls guild</span></div>
+            <div class="grid-example col s12 " style = "color: #00008B;"><button>Accept</button></div>
+
+          </div>
+      </header>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="image/background2.jpg"></div>
+      </div>
+
+      <main>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s3"><a href="#test1">Users</a></li>
+              <li class="tab col s3"><a  href="#test2">Jobs</a></li>
+              <li class="tab col s3"><a href="#test3">Member</a></li>
+              <li class="tab col s3"><a href="#test4">Admin Profile</a></li>
+            </ul>
+          </div>
+          <div id="test1" class="col s12" style = "height : 1500px;">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+  
+            <article>
+              <div class="row">
+                <div class="col s12 center">
+                  <h1 style = "color: #00008B;">List of Users</h1>
+                </div>
+                <div class = "col s12 center">
+                  <h4>The following below is a collection of data from users who have accessed the courageous owls guild website. These users, are people who have an 
+                    interest in this guild, so they create an account to be able to connect directly to this website</h4>
+                </div>
+              </div>
+
+              <br>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+              <br>
+              <br>
+              <table id="myTable">
+                <tr class="header">
+                  <th style="width:50%;">Name</th>
+                  <th style="width:25%;">Join Period</th>
+                  <th style="width:25%;">Gender</th>
+                  
+                </tr>
+                <tr>
+                  <td>Mariah Buxton</td>
+                  <td>3-Month</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Anjali Devine</td>
+                  <td>1-Month</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Javan Frederick</td>
+                  <td>Half Year</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Nicolle Logan</td>
+                  <td>Year</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Year</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Half Year</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Lindsay Draper</td>
+                  <td>3-Month</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Paris specialites</td>
+                  <td>1-Month</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Shazia Naylor</td>
+                  <td>1-Month</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Manha Jensen</td>
+                  <td>Year</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Aarav Wills</td>
+                  <td>1-Month</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Ayaan Macfarlane</td>
+                  <td>Year</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Elinor Clements</td>
+                  <td>1-Month</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Clarissa Rowe</td>
+                  <td>3-Month</td>
+                  <td>Female</td>
+                </tr>
+              </table>
+            </article>
+          </div>
+
+
+          <div id="test2" class="col s12" >
+            
+            <article>
+
+              <div class="row">
+                <div class="col s12 center">
+                  <h1 style = "color: #00008B;">List of Jobs</h1>
+                </div>
+                
+              </div>
+      
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('Posted')"> Posted</button>
+                <button class="btn" onclick="filterSelection('Taken')"> Taken</button>
+                <button class="btn" onclick="filterSelection('Finished')"> Finished</button>
+              </div>
+              
+              <div class="container">
+                <div class="filterDiv Posted">
+                  <h4 style = "text-align: center;padding : 10px;">catch alive Ancient dragon</h4>
+                    <ul>
+                      <li>Reward : Legendary item Guild Chest </li>
+                      <li>Min-Rank : Guardian </li>
+                      <li>Request : Ainz Oal Gown </li>
+                      <li>Time : 20 Days Remaining</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                            
+                </div>
+  
+                <div class="filterDiv Posted">
+                  <h4 style = "text-align: center;padding : 10px;">Raid : Electro Dragon Nest</h4>
+                    <ul>
+                      <li>Reward : Epic Weapon Guild Chest</li>
+                      <li>Min-Rank : General </li>
+                      <li>Request : Cocytus </li>
+                      <li>Time : 15 Days Remaining</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Posted">
+                  <h4 style = "text-align: center;padding : 10px;">black dragon Karas fangs</h4>
+                    <ul>
+                      <li>Reward : Guild Wings & Guld Costume </li>
+                      <li>Min-Rank : Gladiator </li>
+                      <li>Request : LunarKnight </li>
+                      <li>Time : 7 Days Remaining</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Finished">
+                  <h4 style = "text-align: center;padding : 10px;">Destroy Karigan Temple</h4>
+                    <ul>
+                      <li>Reward : 2000 Gold </li>
+                      <li>Min-Rank :  Guardian</li>
+                      <li>Request : Griever </li>
+                      <li>Time : 20 Days ago</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Taken">
+                  <h4 style = "text-align: center;padding : 10px;">Steal Ancient Weapon</h4>
+                    <ul>
+                      <li>Reward : 20000 Gold </li>
+                      <li>Min-Rank : General </li>
+                      <li>Request : Zenos </li>
+                      <li>Time : 3 hours ago</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Taken">
+                  <h4 style = "text-align: center;padding : 10px;">Kill Chaos Dragon</h4>
+                    <ul>
+                      <li>Reward : 2x Guld Costume Chest </li>
+                      <li>Min-Rank : Gladiator </li>
+                      <li>Request : Bukubukuchagama </li>
+                      <li>Time : 2 minutes ago</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Finished">
+                  <h4 style = "text-align: center;padding : 10px;">Aura of White Dragon</h4>
+                    <ul>
+                      <li>Reward : 3x Guild Wings Chest</li>
+                      <li>Min-Rank : General </li>
+                      <li>Request : Slytherin </li>
+                      <li>Time : 2 days ago</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Finished">
+                  <h4 style = "text-align: center;padding : 10px;">Steal the yellow dragon egg</h4>
+                    <ul>
+                      <li>Reward : Guild Wings & Guld Costume </li>
+                      <li>Min-Rank : Gladiator </li>
+                      <li>Request : LunarKnight </li>
+                      <li>Time : 7 Days Remaining</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                <div class="filterDiv Taken">
+                  <h4 style = "text-align: center;padding : 10px;">Kill Poisson Dragon</h4>
+                    <ul>
+                      <li>Reward : Promotion Guild Rank </li>
+                      <li>Min-Rank : General</li>
+                      <li>Request : Ainz Oal Gown  </li>
+                      <li>Time : 1 hour ago</li>
+                    </ul>
+                    <form action = "login.php" method = "POST" >
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment_ind</i>
+                          <input value = "Username" type="text" class="validate">
+                        </div>
+                      </div>
+                      <button>Accept Mission</button>
+                    </form>
+                </div>
+                
+              </div>
+            </article>
+          </div>
+          <div id="test3" class="col s12 " style = "margin : 12%;">
+            
+            <article>
+              <div class="row">
+                <div class="col s12">
+                  <h1 style = "color: #00008B;margin-left : 8%;margin-top:-5%;">List of Supreme Guild Members</h1>
+                </div>
+                
+              </div>
+           
+            
+            <div class="card-container col s3">
+              <span class="pro">Leader</span>
+              <img src="image/profile1.png" alt="user"/>
+              <h3>Ainz Ooal Gown</h3>
+              <h6>050201</h6>
+              <p> England <br/> Level 95</p>
+              <div class="buttons">
+                  <button class="primary">
+                      Message
+                  </button>
+                  <button class="primary ghost">
+                      Following
+                  </button>
+              </div>
+              <div class="skills">
+                  <h6>Skills</h6>
+                  <ul>
+                      <li>roar</li>
+                      <li>Holy Relic EX</li>
+                      <li>Judgement Hammer</li>
+                      <li>Electric Smite </li>
+                      <li>Lightning Zap </li>
+                      <li>Armor Break</li>
+        
+                  </ul>
+              </div>
+            
+            </div>
+              <div class="card-container col s3 ">
+                <span class="pro">Vice Leader</span>
+                <img src="image/profile3.png" alt="user"/>
+                <h3>Lunarknight</h3>
+                <h6>308015</h6>
+                <p>Indonesia <br/> Level 90</p>
+                <div class="buttons">
+                    <button class="primary">
+                        Message
+                    </button>
+                    <button class="primary ghost">
+                        Following
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>Armor Break</li>
+                        <li>Poissioness</li>
+                        <li>Eagle Eye</li>
+                        <li>Miss Hit</li>
+                        <li>Rage Mode</li>
+                        <li>Debuff</li>
+                    </ul>
+                </div>
+              </div>
+              
+
+              <div class="card-container col s3 ">
+                <span class="pro">Senior</span>
+                <img src="image/profile9.jpg" alt="user"/>
+                <h3>Dracula</h3>
+                <h6>30001</h6>
+                <p> Spain <br/> Level 90</p>
+                <div class="buttons">
+                    <button class="primary">
+                        Message
+                    </button>
+                    <button class="primary ghost">
+                        Following
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                      <li>Electric Smite </li>
+                      <li>Lightning Zap </li>
+                        <li>Miss Hit</li>
+                        <li>Rage Mode</li>
+                        <li>Debuff</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card-container col s3 ">
+                <span class="pro">Senior</span>
+                <img src="image/profile8.png" alt="user"/>
+                <h3>Carlos</h3>
+                <h6>300292</h6>
+                <p>Brazil <br/> lvl 95</p>
+                <div class="buttons">
+                    <button class="primary">
+                        Message
+                    </button>
+                    <button class="primary ghost">
+                        Following
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                      <li>Armor Break</li>
+                      <li>Poissioness</li>
+                        <li>Miss Hit</li>
+                        <li>Rage Mode</li>
+                        <li>Debuff</li>
+                        <li>Wrath</li>
+                        <li>Brave</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="card-container col s3 ">
+                <span class="pro">Senior</span>
+                <img src="image/profile5.jpg" alt="user"/>
+                <h3>Gilgamesh</h3>
+                <h6>032012</h6>
+                <p> Qatar <br/> Level 94</p>
+                <div class="buttons">
+                    <button class="primary">
+                        Message
+                    </button>
+                    <button class="primary ghost">
+                        Following
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>Spear piercing</li>
+                        <li>Debuff</li>
+                        <li>Armor Break</li>
+                      <li>Poissioness</li>
+                      <li>Rage Mode</li>
+                      <li>Miss Hit</li>
+
+                    </ul>
+                </div>
+              </div>
+              <div class="card-container col s3 ">
+                <span class="pro">Senior</span>
+                <img src="image/profile7.jpg" alt="user"/>
+                <h3>Jungkook</h3>
+                <h6>302012</h6>
+                <p>South Korea<br/> Level 90</p>
+                <div class="buttons">
+                    <button class="primary">
+                        Message
+                    </button>
+                    <button class="primary ghost">
+                        Following
+                    </button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>Sword Eternal</li>
+                        <li>Debuff</li>
+                        <li>Armor Break</li>
+                      <li>Poissioness</li>
+                      <li>Rage Mode</li>
+                      <li>Eagle Eye</li>
+                  
+                    </ul>
+                </div>
+              </div>
+                
+        </div>
+      </div>
+          <div id="test4" class="col s12">
+            <div class="resume">
+              <div class="resume_left">
+                <div class="resume_profile">
+                  <img src="image/profile2.png" alt="profile_pic">
+                </div>
+                <div class="resume_content">
+                  <div class="resume_item resume_info">
+                    <div class="title">
+                      <p class="bold">Muhammad Bagas Pradana</p>
+                      <p class="regular">Student</p>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="data">
+                          Bekasi, Perumnas 3 <br /> Indonesia
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="data">
+                          +62 89512626794
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="data">
+                          bagaspradan0201@gmail.com
+                        </div>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="resume_item resume_skills">
+                    <div class="title">
+                      <p class="bold">skill's</p>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="skill_name">
+                          HTML
+                        </div>
+                        <div class="skill_progress">
+                          <span style="width: 90%;"></span>
+                        </div>
+                        <div class="skill_per">90%</div>
+                      </li>
+                      <li>
+                        <div class="skill_name">
+                          CSS
+                        </div>
+                        <div class="skill_progress">
+                          <span style="width: 95%;"></span>
+                        </div>
+                        <div class="skill_per">95%</div>
+                      </li>
+                      <li>
+                        <div class="skill_name">
+                          Java
+                        </div>
+                        <div class="skill_progress">
+                          <span style="width: 60%;"></span>
+                        </div>
+                        <div class="skill_per">60%</div>
+                      </li>
+                      <li>
+                        <div class="skill_name">
+                          JS
+                        </div>
+                        <div class="skill_progress">
+                          <span style="width: 50%;"></span>
+                        </div>
+                        <div class="skill_per">50%</div>
+                      </li>
+                      <li>
+                        <div class="skill_name">
+                          Python
+                        </div>
+                        <div class="skill_progress">
+                          <span style="width: 75%;"></span>
+                        </div>
+                        <div class="skill_per">75%</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="resume_item resume_social">
+                    <div class="title">
+                      <p class="bold">Social</p>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <div class="data">
+                          <p class="semi-bold">Facebook</p>
+                          <p>bagaspradana@facebook</p>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="icon">
+                          <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="data">
+                          <p class="semi-bold">Youtube</p>
+                          <p>M. Bagas Pradana@youtube</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="data">
+                          <p class="semi-bold">Linkedin</p>
+                          <p>Muhammad Bagas Pradana@linkedin</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             </div>
+             <div class="resume_right">
+               <div class="resume_item resume_about">
+                   <div class="title">
+                      <p class="bold">About us</p>
+                    </div>
+                   <p>hello my name is muhammad bagas pradana, i love the IT world since i was a kid, i finally made it to my favorite study program</p>
+               </div>
+               <div class="resume_item resume_work">
+                   <div class="title">
+                      <p class="bold">Experience</p>
+                    </div>
+                   <ul>
+                       <li>
+                           <div class="date">2015 - 2018</div> 
+                           <div class="info">
+                                <p class="semi-bold">
+                                  active member of high school scouting</p> 
+                             <p>the high school scout council, high school scout committee members.</p>
+                           </div>
+                       </li>
+                       <li>
+                         <div class="date">2018</div>
+                         <div class="info">
+                                <p class="semi-bold">general director of a high school stage drama</p> 
+                             <p>
+                              became the director of the 18th high school drama. Success in making the high school drama into an action drama</p>
+                           </div>
+                       </li>
+                       <li>
+                         <div class="date">2019</div>
+                         <div class="info">
+                                <p class="semi-bold">12 of them, the top achievers of campus student leadership training</p> 
+                         
+                           </div>
+                       </li>
+                       <li>
+                        <div class="date">2019 - 2020</div>
+                        <div class="info">
+                               <p class="semi-bold">chairman of the KPU organization of computer science study programs</p> 
+                  
+                          </div>
+                      </li>
+                      <li>
+                        <div class="date">2020 - now</div>
+                        <div class="info">
+                               <p class="semi-bold">general chairman of the Computer Science Study Program Student Legislature</p> 
+                         
+                          </div>
+                      </li>
+                   </ul>
+               </div>
+               <div class="resume_item resume_education">
+                 <div class="title">
+                      <p class="bold">Education</p>
+                    </div>
+                 <ul>
+                       <li>
+                           <div class="date">2015 - 2018</div> 
+                           <div class="info">
+                                <p class="semi-bold">SMAN 18 Kota Bekasi</p> 
+                        
+                           </div>
+                       </li>
+                       <li>
+                         <div class="date">2018 - now</div>
+                         <div class="info">
+                                <p class="semi-bold">State University of Jakarta</p> 
+                             <p>Student</p>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+               <div class="resume_item resume_hobby">
+                 <div class="title">
+                      <p class="bold">Hobby</p>
+                    </div>
+                  <ul>
+                    <li><i class="fas fa-book"></i></li>
+                    <li><i class="fas fa-gamepad"></i></li>
+                    <li><i class="fas fa-music"></i></li>
+                    <li><i class="fab fa-pagelines"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+          </div>
+        
+          
+          
+        </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <div class = "col s12"><h5 class="white-text" style = "text-align : center;">Courageous Owls </h5></div>
+        <div class = "col s6"><span class="flow-text"><img src="image\logo2_crop_transparent.png" alt="" itemprop = "logo" style = "width :100%;float : left;"/></span></div>
+        <div class = "col s6"><span><p class="grey-text text-lighten-4" style = "text-align : justify;">Courageous owls is a professional guild from the dragon Nest game where this guild has been formed for a long time by star players who have taken part in dragonnest games. "From the stars we came, to the stars we rise."</p></span></div>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Temukan kami juga di :</h5>
+        <ul>
+          <!--Memanggil icons awesome css-->
+          <!--<i class="fa fa-instagram" aria-hidden="true"> ini adalah cara memanggil icons Instagram awesome css-->
+          <li><i class="fa fa-instagram" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.instagram.com"> Instagram Offical</a></i></li>
+          <li><i class="fa fa-facebook" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.facebook.com"> Facebook Official</a></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://www.twitter.com"> Twitter Offical</a></i></li>
+          <li><i class="fa fa-google" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&csig=AF-SEnZ8AqYjsljnunZM%3A1588387195&flowName=GlifWebSignIn&flowEntry=AddSession"> Google+</a></i></li>
+          <li><i class="fa fa-github" aria-hidden="true"><a class="grey-text text-lighten-3" href="https://github.com/bagas050201"> Github Account</a></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+        <p>Copyright © 2020 Muhammad Bagas Pradana. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script type = "text/javascript" src = "JS_admin.js"></script>
+
+  </body>
+</html>
