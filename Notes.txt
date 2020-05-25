@@ -4,12 +4,13 @@ Prodi       : Ilmu Komputer 2018.
 Mata Kuliah : Perancangan dan Pemrograman Web.
 
 				
-				Penjelasan Singkat
+							Penjelasan Singkat
 
 Keterangan :
 1. image files : Berisi komponen image yang diperlukan dalam membuat tampilan web guild.
 2. Html files  : Berisi tulisan html dan kode Javascript.
 3. CSS files   : Berisi Kode CSS3 disertai Method Responsive Web Pages.
+4. Javascript files : Berisi kode pemrograman yang menjadikan websites menjadi semakin hidup.
 
 Keterangan Tambahan :
 1. index.html                  : merupakan tampilan/halaman awal dari web Courageous Owls Guild.
@@ -23,7 +24,87 @@ Keterangan Tambahan :
 9. Dev_info                    : Merupakan tampilan halaman web yang menjelaskan keluh kesah dalam membuat website ini.
 
 
-Cara Menjalankan : Run index.html
+task Assignment 2 Phase 3 (Done):
 
-notes :
-1. jika di jalankan pada browser chrome maka pada index.html akan ada renggangan kebawah , ini cukup aneh terlebih pada browser explorer dan mozilla firefox tidak terjadi hal seperti ini.
+task :
+
+halaman 2 :
+● Adding pages (done) : main_content.html, admin.html , membership.html
+● Adding forms (done) : register.html , membership.html , Login.html , login_civillian.html
+● Adding form handling (Client side) (done) : register.html , login.html , login_civillian.html , membership.html
+● Adding responsivity (done) : All pages
+
+Halaman 4 : main_content.html
+ Company Profile (done) 
+● Site goals (to manage miscelaneous Jobs) (done) 
+● Management members (fake) (done) 
+– The key information is company structure (bare minimum) (done) 
+● How to Join (done) 
+● Criteria of accepted jobs (done) 
+● Criteria of Minimum acceptable rewards (done) 
+● Benefits of early members (done) 
+● Jobs workflow (explain how a new job can be posted until the rewards is given) (done) 
+● Membership ranks and criteria (done) 
+● Front page must not be empty information (done) 
+
+Halaman 5 : admin.html
+Admin profile (done)
+● List of users (done)
+● List of jobs (done)
+– Filtered by posted, taken, finished (done)
+● Member profile (done)
+
+Halaman 6 :
+● Login 
+– Add extra security measure when login other than codename & password (done) : login.html , login_civillian.html
+● Register
+– Add form upload (KTP) (done) : register.html , membership.html
+● User Profile
+– You decide what need to be entered other than basic user information (done) : admin.html , membership.html , main_content.html
+● Job posting
+– Consequently, please add job posted page (done) : admin.html , main_content.html
+● Rank upgrade
+– The system would notice if the user eligible to rank up (done) : membership.html
+– But the user need to manually request for rank up for ceremonial purpose (done)
+
+halaman 7 : register.html
+1. Username & password must not be empty (done)
+2. Check for password strength, reject if weak (done)
+3. Function for auto generated strong password (done)
+4. KTP form upload must note be empty (done)
+5. Address must not be empty (done)
+6. Password must be typed twice and matched (done)
+7. Telephone form separated from handphone form (done)
+8. Telephone & handphone must followed international phone code (with country and area code), the system capable to check for correct phone pattern (done)
+
+halaman 8 : register.html
+1. Register google form SSO handling (done)
+
+halaman 9 : login.html , login_civillian.html
+● Username must not be empty (done)
+● Password must not be empty (done)
+● Add extra security measure (done)
+– You choose yourself
+– Anything is permitted except SSO (done)
+
+halaman 10 : register.html , login.html , login_civillian.html , membership.html
+
+● For the other forms you choose yourself what (done)
+must be checked in each form node
+● The very least check for emptiness (done)
+● We could also check for maximum length, input (done)
+
+Halaman 11 : All Pages
+● For all pages asked to implement, they must be
+responsive (done)
+● Responsive means the layout is adaptable to
+different screen size, Materialize support this (done)
+● To achieve responsiveness instead of adjusting CSS
+codes, starts by by creating two layouts for each (done)
+page: desktop size and smartphone size
+
+Halaman 13 :
+- Saya menggunakan Java script with pure DOM selector
+
+
+Cara Menjalankan : Run index.html
