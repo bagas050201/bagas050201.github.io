@@ -75,10 +75,11 @@ body, html {
     transform: translateY(4px);
   }
   
- @media screen and (max-width: 641px) {
+  @media screen and (max-width: 641px) {
 
     .container{
       margin-right : 100px;
       margin-top: 150px;
     }
  }
+
